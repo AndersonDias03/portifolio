@@ -1,0 +1,78 @@
+
+
+.cabecalho__menu-hanburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/menu\ color.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+   
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hanburguer{
+    background-image: url("../img/X\ color.svg");
+}
+
+.cabecalho{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu{
+    display:none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.container__imagem{
+    padding: 0.5em;
+}
+
+.cabecalho__titulo{
+    align-items: center;
+    margin-left: 2.5em;
+    font-size: 19px;
+    color: var(--cinza);
+}
+
+.lista-menu__item{
+    color: var(--branco);
+    font-size: 16px;
+    padding: 0.5em;
+}
+
+.container__botao{
+    display: none;
+}
+
+.redes__sociais{
+    display: flex;
+    padding: 0.5em;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cabecalho__titulo{
+        margin: 1em;
+        font-size: 30px;
+    }
+    .container__redes{
+        align-items: center;
+        display: block;
+    }
+}

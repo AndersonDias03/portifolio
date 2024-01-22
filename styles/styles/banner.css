@@ -1,0 +1,149 @@
+.container__principal {
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.container__principal-img {
+    margin: 1em;
+    width: 50%;
+    height: 50%;
+}
+
+.container__descricao {
+    color: var(--cinza-claro);
+    margin: 3em 0 2.5em;
+}
+
+.container__paragrafo {
+    font-size: 20px;
+    margin-top: 0.5em;
+}
+
+.container__nome {
+    color: var(--verde-claro);
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-top: 0.3em;
+}
+
+.container__profissao {
+    font-family: var(--font-secundario);
+    font-size: 18px;
+    margin-top: 0.6em;
+}
+
+.container__profissao-destaque {
+    color: var(--cinza);
+    font-size: 22px;
+
+}
+
+.container__apresentacao {
+    color: var(--cinza-claro);
+    margin: 5em 1.5em;
+}
+
+.container__apresentacao-titulo {
+    text-align: center;
+    color: var(--cor-terciaria);
+    font-size: 30px;
+    margin: 4em 0 2.5em;
+}
+
+.container__apresentacao-paragrafo {
+    margin:1em 10em;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.container__abilidades {
+    margin: 5em 1em;
+    margin-left: 30%;
+    text-align: center;
+    width: 40%;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.container-img {
+    text-align: center;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 3s;
+}
+
+.container__abilidades-img {
+    width: 20%;
+    display:inline;
+    height: 100px;
+    margin: 5px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.container__abilidades-titulo {
+    text-align: center;
+    color: var(--cor-terciaria);
+    font-size: 30px;
+    margin: 4em 0 2.5em;
+}
+
+.linha-decoration {
+    border: none;
+    border-top: 2px solid var(--cor-terciaria); 
+    margin: 0 1em;
+}
+
+.container-img {
+    height: 200px;
+    background-color: --branco;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.projetos {
+    padding: 10em 2em 5em;
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+}
+
+.projetos>h2 {
+    text-align: center;
+    color: var(--verde-claro);
+    margin-bottom: 2em;
+    font-size: 25px;
+    padding-bottom: 0.4em;
+    display: inline-block;
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+@media screen and (max-width: 1000px){
+    .container__abilidades {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 824px){
+    .container__apresentacao-paragrafo,.container__apresentacao-titulo{
+        text-align: center;
+        margin:2em 1em;
+        margin-left: 2em;
+    }
+
+    .container__abilidades{  
+        width: 78vw;
+        margin: 5em;
+    }
+
+}

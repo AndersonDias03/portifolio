@@ -1,0 +1,91 @@
+.projetos {
+    text-align: center;
+    background:var(--preto)
+}
+
+.projetos__texto{
+  color: var(--cor-terciaria);
+  text-align: center;
+  font-size: 30px;
+  margin: 4em 0 1.5em;
+}
+
+.projetos-card {
+    background-color: #333;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid; 
+    border-color: var(--verde-claro);
+    padding: 20px;
+    margin: 30px;
+    width: 200px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projetos-card:hover {
+    transform: scale(1.05);
+}
+
+.projeto-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.projeto-res{
+  width: 83%;
+  border-radius: 6px;
+}
+
+.projeto-titulo {
+    color: var(--verde-claro);
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.projeto-descricao {
+    color: var( --branco);
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@keyframes borderAnimation {
+    0% {
+      border-top: 2px solid var(--verde-claro);
+      border-right: 2px solid var(--verde-claro);
+      border-bottom: 2px solid var(--verde-claro);
+      border-left: 2px solid transparent;
+    }
+    25% {
+      border-top: 2px solid transparent;
+      border-right: 2px solid var(--verde-claro);
+      border-bottom: 2px solid var(--verde-claro);
+      border-left: 2px solid var(--verde-claro);
+    }
+    50% {
+      border-top: 2px solid var(--verde-claro);
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid var(--verde-claro);
+      border-left: 2px solid var(--verde-claro);
+    }
+    75% {
+      border-top: 2px solid var(--verde-claro);
+      border-right: 2px solid var(--verde-claro);
+      border-bottom: 2px solid transparent;
+      border-left: 2px solid var(--verde-claro);
+    }
+    100% {
+      border-top: 2px solid var(--verde-claro);
+      border-right: 2px solid var(--verde-claro);
+      border-bottom: 2px solid var(--verde-claro);
+      border-left: 2px solid transparent;
+    }
+  }
+  
+  .projetos-card {
+    border-radius: 10px;
+    padding: 20px;
+    animation: borderAnimation 5s infinite linear;
+  }

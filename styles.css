@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/projetos.css");
+@import url("styles/styles/rodape.css");
+
+:root {
+    --font-principal: "Roboto";
+    --font-secundario: "Courier Prime";
+    --cor-de-fundo: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    --cinza-claro:#E0E0E0;
+    --cinza:#828282;
+    --branco: #FFFFFF;
+    --verde-claro: #70FF00;
+    --verde-escuro:#4CAF50;
+    --preto:#161616;
+    --cor-terciaria: #22D4FD; 
+}
+
+
+
+.container__principal,.container__apresentacao,
+.projetos,.rodape,.linha-decoration{
+    visibility: hidden;
+}

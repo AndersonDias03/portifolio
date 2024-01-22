@@ -1,0 +1,45 @@
+ 
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--preto);
+    color: #fff;
+  }
+
+  .rodape__voltar{
+    margin-top: 0.5em;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.rodape__link-voltar{
+  color: var(--verde-escuro);
+}
+  
+  .rodape__paragrafo{
+    font-family: var(--font-secundario);
+    font-size:25px ;
+    margin: 0.5em;
+  }
+
+  a {
+    font-size: 20px;
+    color: var(--verde-escuro);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color:violet;
+  }
+
+  .linha-decoration{
+    border: none;
+    border-top: 2px solid var(--cor-terciaria); 
+    margin: 0 1em;
+  }
+
+  
